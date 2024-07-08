@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specify the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <!-- Set the viewport to make the website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
+    <title>Image Color Extractor</title>
+    <!-- Link to the external CSS stylesheet located in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Main container div for the content -->
+    <div class="container">
+        <!-- Header for the webpage -->
+        <h1>Image Color Extractor</h1>
+        <!-- File input element for uploading an image file, only accepts image files -->
+        <input type="file" id="imageInput" accept="image/*">
+        <!-- Button to trigger the process of extracting colors from the uploaded image -->
+        <button id="processButton">Process Image</button>
+        <!-- Div to display feedback messages to the user -->
+        <div id="feedback"></div>
+        <!-- Div to display the grid of extracted colors -->
+        <div id="colorGrid"></div>
+    </div>
+    <!-- Link to the external JavaScript file located in the static folder -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

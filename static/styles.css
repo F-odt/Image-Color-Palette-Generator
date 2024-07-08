@@ -1,0 +1,130 @@
+/* Global styles for the entire webpage */
+body {
+    /* Set the font family for the entire body */
+    font-family: Arial, sans-serif;
+    /* Remove default margin and padding */
+    margin: 0;
+    padding: 0;
+    /* Center align content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Set minimum height to 100% of the viewport height */
+    min-height: 100vh;
+    /* Set background color for the body */
+    background-color: #FFF8F3;
+    /* Set text color for the body */
+    color: #405D72;
+}
+
+/* Styling for the main content container */
+.container {
+    /* Set maximum width of the container */
+    max-width: 800px;
+    /* Add padding inside the container */
+    padding: 20px;
+    /* Set background color for the container */
+    background-color: #F7E7DC;
+    /* Add rounded corners to the container */
+    border-radius: 10px;
+    /* Add shadow effect to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the main heading */
+h1 {
+    /* Center align the heading text */
+    text-align: center;
+    /* Set text color for the heading */
+    color: #405D72;
+}
+
+/* Styling for the file input element */
+#imageInput {
+    /* Display block with margin auto for center alignment */
+    display: block;
+    margin: 20px auto;
+}
+
+/* Styling for the process button */
+#processButton {
+    /* Display block with margin auto for center alignment */
+    display: block;
+    margin: 20px auto;
+    /* Add padding inside the button */
+    padding: 10px 20px;
+    /* Set background color for the button */
+    background-color: #405D72;
+    /* Set text color for the button */
+    color: #FFF8F3;
+    /* Remove default border */
+    border: none;
+    /* Add rounded corners to the button */
+    border-radius: 5px;
+    /* Set cursor style to pointer */
+    cursor: pointer;
+    /* Set font size for the button text */
+    font-size: 16px;
+    /* Add transition effect for background color change */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover state styling for the process button */
+#processButton:hover {
+    /* Change background color on hover */
+    background-color: #758694;
+}
+
+/* Styling for the feedback message */
+#feedback {
+    /* Center align text */
+    text-align: center;
+    /* Add bottom margin */
+    margin-bottom: 20px;
+    /* Set text color for the feedback message */
+    color: #405D72;
+}
+
+/* Styling for the color grid */
+#colorGrid {
+    /* Display as grid */
+    display: grid;
+    /* Create responsive grid columns */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Set gap between grid items */
+    gap: 20px;
+}
+
+/* Styling for each color swatch */
+.color-swatch {
+    /* Display flex with column direction */
+    display: flex;
+    flex-direction: column;
+    /* Center align items */
+    align-items: center;
+    /* Set background color for the swatch */
+    background-color: #FFF8F3;
+    /* Add padding inside the swatch */
+    padding: 10px;
+    /* Add rounded corners to the swatch */
+    border-radius: 5px;
+    /* Add shadow effect to the swatch */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the color box within each swatch */
+.color-box {
+    /* Set width and height for the color box */
+    width: 100px;
+    height: 100px;
+    /* Add border around the color box */
+    border: 1px solid #758694;
+    /* Add bottom margin to separate from color info */
+    margin-bottom: 10px;
+}
+
+/* Styling for the color information within each swatch */
+.color-info {
+    /* Center align text */
+    text-align: center;
+}
